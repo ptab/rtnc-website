@@ -1,0 +1,1396 @@
+@charset "UTF-8";
+/*
+ * Lightflow - HTML5 Template
+ * File Description: This file contain all the site styles.
+ * 
+ * Author: Jaime Hernández Avitia (Jaheravy)
+ * 
+ * Website: http://www.jaheravy.com/
+ * Twitter: http://www.twitter.com/jaheravy
+ * 
+ * Email: contact@jaheravy.com
+ * Support: support@jaheravy.com
+ * 
+ * This template has been purchased at http://www.themeforest.net/
+ * 
+ * FILE CONTENTS:
+ * 
+ * 0. @font-face
+ * 1. Grid rules
+ * 2. Base rules
+ * 3. Layout rules
+ * 4. Module rules
+ * 5. State rules
+ * 6. Helper classes
+ * 7. Media Queries
+ * 7.1 Print styles
+ * 
+ */
+/*
+ *  =========================
+ *  ===== 0. @font-face =====
+ *  =========================
+ *
+ */
+@font-face {
+  font-family: 'entypo';
+  src: url("fonts/entypo.eot");
+  src: url("fonts/entypo.eot?#iefix") format("embedded-opentype"), url("fonts/entypo.woff") format("woff"), url("fonts/entypo.ttf") format("truetype"), url("fonts/entypo.svg#entypo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+ *  =========================
+ *  ===== 1. GRID RULES =====
+ *  =========================
+ *
+ */
+/* Fluid Cols */
+.grid-col-1 {
+  width: 5.833333333%;
+}
+
+.grid-col-2 {
+  width: 14.166666666%;
+}
+
+.grid-col-3 {
+  width: 22.499999999%;
+}
+
+.grid-col-4 {
+  width: 30.833333332%;
+}
+
+.grid-col-5 {
+  width: 39.166666665%;
+}
+
+.grid-col-6 {
+  width: 47.499999998%;
+}
+
+.grid-col-7 {
+  width: 55.833333331%;
+}
+
+.grid-col-8 {
+  width: 64.166666664%;
+}
+
+.grid-col-9 {
+  width: 72.499999997%;
+}
+
+.grid-col-10 {
+  width: 80.83333333%;
+}
+
+.grid-col-11 {
+  width: 89.166666663%;
+}
+
+.grid-col-12 {
+  width: 97.499999996%;
+}
+
+.grid-col-1,
+.grid-col-2,
+.grid-col-3,
+.grid-col-4,
+.grid-col-5,
+.grid-col-6,
+.grid-col-7,
+.grid-col-8,
+.grid-col-9,
+.grid-col-10,
+.grid-col-11,
+.grid-col-12 {
+  display: block;
+  float: left;
+  margin-left: 1.25%;
+  margin-right: 1.25%;
+}
+
+/* Fixed Cols */
+.grid-col-fixed-1 {
+  width: 70px;
+}
+
+.grid-col-fixed-2 {
+  width: 170px;
+}
+
+.grid-col-fixed-3 {
+  width: 270px;
+}
+
+.grid-col-fixed-4 {
+  width: 370px;
+}
+
+.grid-col-fixed-5 {
+  width: 470px;
+}
+
+.grid-col-fixed-6 {
+  width: 570px;
+}
+
+.grid-col-fixed-7 {
+  width: 670px;
+}
+
+.grid-col-fixed-8 {
+  width: 770px;
+}
+
+.grid-col-fixed-9 {
+  width: 870px;
+}
+
+.grid-col-fixed-10 {
+  width: 970px;
+}
+
+.grid-col-fixed-11 {
+  width: 1070px;
+}
+
+.grid-col-fixed-12 {
+  width: 1170px;
+}
+
+.grid-col-fixed-1,
+.grid-col-fixed-2,
+.grid-col-fixed-3,
+.grid-col-fixed-4,
+.grid-col-fixed-5,
+.grid-col-fixed-6,
+.grid-col-fixed-7,
+.grid-col-fixed-8,
+.grid-col-fixed-9,
+.grid-col-fixed-10,
+.grid-col-fixed-11,
+.grid-col-fixed-12 {
+  display: block;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*
+ *  =========================
+ *  ===== 2. BASE RULES =====
+ *  =========================
+ *
+ */
+html,
+button,
+input,
+select,
+textarea {
+  color: #545454;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5625;
+}
+
+html,
+button,
+input,
+select,
+textarea,
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: rgba(211, 211, 211, 1);
+  text-shadow: none;
+}
+
+::selection {
+  background: rgba(211, 211, 211, 1);
+  text-shadow: none;
+}
+
+a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  height: 1px;
+  margin: 12px 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+b {
+  color: #ff6600;
+  font-weight: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+#news-article h1 {
+  font-family: 'Oswald',sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.container .hgroup:first-child {
+  margin-bottom: 19px;
+}
+
+.hgroup h2 {
+  text-transform: none;
+  line-height: 50px;
+  margin-top: 6px;
+}
+
+.section-title h1,
+.section-title h2 {
+  display: inline-block;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Lato',sans-serif;
+  font-weight: 300;
+}
+
+h2,
+h3,
+#news-article h1 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.25em;
+  font-weight: 400;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.625em;
+  line-height: 50px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #ff6600;
+  font-size: 1.6em;
+  line-height: 25px;
+  margin: 25px 0;
+}
+
+h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h4 {
+  color: #808080;
+  font-size: 1em;
+  line-height: 25px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+p {
+  margin: 25px 0 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.wrapper > .container {
+  padding: 125px 0 50px;
+}
+
+/*
+ *  ===========================
+ *  ===== 3. LAYOUT RULES =====
+ *  ===========================
+ *
+ */
+#main-nav {
+  background: #3a3a3c;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  height: 70px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+#main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav li {
+  display: inline-block;
+  padding: 23px 1em;
+}
+
+#main-nav a {
+  color: white;
+  color: rgba(255, 255, 255, 0.75);
+  outline: 0 none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+
+#main-header {
+  text-align: center;
+}
+
+#main-header .a-icon {
+  color: white;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 3.5em;
+  margin-right: 0.2em;
+  transition: all 0.5s ease 0s;
+}
+
+#main-header .a-icon:last-child {
+  margin-right: 0;
+}
+
+#main-header .hgroup {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+#main-header h1,
+#main-header h2 {
+  color: white;
+  margin: 0;
+}
+
+#main-header h1 {
+  font-size: 6.875em;
+  line-height: 125px;
+}
+
+#main-header h2 {
+  font-size: 2.375em;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+#main-header .social-icons {
+  margin-top: 25px;
+}
+
+#main-header .big-dual-button {
+  bottom: 50px;
+  position: absolute;
+}
+
+#news-article {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: none;
+  margin-top: 25px;
+  padding-bottom: 50px;
+}
+
+#news-article .quote {
+  border-right: 5px solid #ff6600;
+  text-align: right;
+}
+
+#news-article h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #ff6600;
+  font-size: 2.625em;
+  line-height: 50px;
+  padding-bottom: 25px;
+  padding-top: 22px;
+}
+
+#news-article .image-left {
+  float: left;
+  margin-right: 2em;
+}
+
+#news-article .image-right {
+  float: right;
+  margin-left: 2em;
+}
+
+/* This is just to define the point where the page will be positioned after entering news. */
+#news-article_start {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+#section-separator_1 {
+  background: url("../img/backgrounds/bg_2.jpg") 50% 0 no-repeat fixed;
+}
+
+#section-separator_2 {
+  background: url("../img/backgrounds/bg_3.jpg") 50% 0 no-repeat fixed;
+}
+
+#section-separator_3 {
+  background: url("../img/backgrounds/bg_4.jpg") 50% 0 no-repeat fixed;
+}
+
+#section-separator_4 {
+  background: url("../img/backgrounds/bg_5.jpg") 50% 0 no-repeat fixed;
+}
+
+#main-footer {
+  background-color: #262626;
+  color: #808080;
+  font-weight: 300;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#main-footer a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*
+ *  ===========================
+ *  ===== 4. MODULE RULES =====
+ *  ===========================
+ *
+ */
+/*
+ * Chrome Frame prompt
+ */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10500;
+}
+
+.dropcap {
+  background-color: #ff6600;
+  border-radius: 2px 2px 2px 2px;
+  color: white;
+  display: block;
+  float: left;
+  font-size: 1.5625em;
+  line-height: 40px;
+  margin-right: 8px;
+  margin-top: 5px;
+  padding: 0;
+  text-align: center;
+  width: 40px;
+}
+
+.wrapper {
+  background-color: #f3f3f3;
+}
+
+.subsection {
+  margin-top: 25px;
+}
+
+.big-dual-button {
+  border: 6px solid #ff6600;
+  border-radius: 2em 2em 2em 2em;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.07);
+  font-size: 1.125em;
+}
+
+.big-dual-button a {
+  background: #F36F5A;
+  background: linear-gradient(#f36f5a, #c75a49) repeat scroll 0 0 transparent;
+  box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.1) inset, 1px 2px 0 0 #ae4c3e;
+  color: #E6E6E6;
+  float: left;
+  outline: 0 none;
+  padding: 1em 0;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  width: 9.85em;
+  /* Change this if you change the big-dual-button text - Default = 9.85em */
+}
+
+.big-dual-button a:first-child {
+  border-radius: 1.625em 0px 0px 1.625em;
+  border-right: 1px solid #BA5142;
+}
+
+.big-dual-button a:last-child {
+  border-radius: 0 1.625em 1.625em 0;
+}
+
+.big-dual-button:after {
+  background: #B35142;
+  background: linear-gradient(#c75a49, #f36f5a) repeat scroll 0 0 transparent;
+  border: 1px solid #BF5545;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  color: #E6E6E6;
+  content: "or";
+  display: block;
+  font-size: 0.875em;
+  height: 2em;
+  left: 10.25em;
+  /* Change this if you change the big-dual-button text */
+  line-height: 1.9;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  top: 1em;
+  width: 2em;
+}
+
+.container {
+  position: relative;
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+/*
+ * Container for title who has side lines; allow to create those lines.
+ */
+.section-title {
+  margin-top: 25px;
+  position: relative;
+}
+
+.title-lines_left {
+  left: 0;
+}
+
+.title-lines_right {
+  right: 0;
+}
+
+.title-lines_left,
+.title-lines_right {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  height: 2px;
+  position: absolute;
+  top: 49%;
+}
+
+.section-separator {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2) inset;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-separator figure {
+  background-color: rgba(243, 243, 243, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding-bottom: 13px;
+  padding-top: 12px;
+}
+
+.section-separator blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 50px;
+  margin: 25px 0;
+}
+.main-title figure {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 464px;
+  max-height: 143px;
+  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-left: 6px;
+  padding-right: 8px;
+  border-radius: 10px;
+}
+
+.main-title blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 50px;
+  margin: 25px 0;
+}
+
+.section-separator figcaption {
+  line-height: 25px;
+  margin: 25px 0;
+}
+
+/* Normal icon */
+.icon {
+  font-family: "entypo";
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+/* Icon in an "a" element */
+.a-icon {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon,
+.a-icon {
+  margin: 0;
+  display: inline-block;
+}
+
+/* PrettyPhoto Styles */
+div.pp_default .pp_top .pp_middle, div.pp_default .pp_bottom .pp_middle {
+  height: 13px;
+}
+
+div.pp_default .pp_top .pp_middle {
+  background: url(../img/prettyPhoto/default/sprite_x.png) top left repeat-x;
+}
+
+div.pp_default .pp_bottom .pp_middle {
+  background: url(../img/prettyPhoto/default/sprite_x.png) bottom left repeat-x;
+}
+
+/* Section in the bottom of each main section */
+.box {
+  text-align: center;
+}
+.news-box h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 0px;
+  padding-bottom: 12px;
+}
+
+.news-box h4 {
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.news-box img {
+  height: auto;
+  width: 100%;
+}
+
+.news-wrap {
+  margin-bottom: -33px;
+  /* Keep the vertical rhythm */
+  overflow: hidden;
+  padding-top: 77px;
+}
+
+.news-wrap > div > * {
+  display: inline-block;
+}
+
+.news-menu-container {
+  position: relative;
+  margin-top: 25px;
+}
+
+.news-menu {
+  left: 50%;
+  margin-left: -200px;
+  /* Change this if you change the menu text, this value is the width of ".news-menu li" */
+  position: absolute;
+  z-index: 999;
+}
+
+.news-menu li {
+  width: 200px;
+  /* Change this if you change the menu text */
+}
+
+.news-box {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.news-box h3 {
+  line-height: 37px;
+}
+
+.news-box h4 {
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 25px;
+}
+
+.contact-form label,
+.contact-form button {
+  display: block;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #EBEBEB;
+  border: none;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+  color: #808080;
+  margin-bottom: 25px;
+  transition: all 0.5s ease 0s;
+}
+
+.contact-form input {
+  height: 50px;
+  padding: 0 2.5%;
+  width: 95%;
+}
+
+.contact-form textarea {
+  line-height: 25px;
+  min-height: 209px;
+  padding: 16px 0 0 2.5%;
+  width: 97.5%;
+}
+
+.contact-info {
+  margin-top: 25px;
+}
+
+.contact-info-box a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.contact-info-box p {
+  color: #808080;
+  margin: 0;
+  text-align: center;
+}
+
+label.error {
+  color: #ff6600;
+  margin-bottom: 25px;
+}
+
+label.error:before {
+  content: "\E0c7";
+  display: inline-block;
+  font-family: "entypo";
+  font-size: 1.2em;
+  line-height: 0.2;
+  margin-right: 0.3em;
+  vertical-align: -50%;
+}
+
+input.error,
+textarea.error {
+  box-shadow: 0px 0px 3px 0px #ff6600 inset;
+  transition: all 1.5s ease;
+}
+
+.image {
+  position: relative;
+}
+
+/*
+ *  ==========================
+ *  ===== 5. STATE RULES =====
+ *  ==========================
+ *
+ */
+#main-nav a:hover,
+#main-header .a-icon:hover,
+.image-hover .icon:hover {
+  color: white;
+}
+
+.big-dual-button a:hover {
+  background: linear-gradient(#ff745e, #d4604d);
+}
+
+.big-dual-button a:active {
+  background: #FF7800;
+  background: linear-gradient(#c75a49, #f36f5a);
+}
+
+.button-1:hover {
+  background: #E66854;
+}
+
+.button-2:hover,
+.secondary-menu li:hover {
+  background: #F3F3F3;
+}
+
+.secondary-menu li:hover {
+  cursor: pointer;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #F3F3F3;
+}
+
+/*
+ *  ============================
+ *  ===== 6. HELPER CLASSES =====
+ *  ============================
+ *
+ */
+.wide {
+  width: 100% !important;
+  display: inline-block;
+}
+
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+
+/*
+ *  ============================
+ *  ===== 7. MEDIA QUERIES =====
+ *  ============================
+ *
+ */
+@media only screen and (max-width: 64em) {
+  .product-box {
+    width: 226px;
+  }
+
+  .news-box {
+    width: 312px;
+  }
+
+  .twitter-container {
+    max-width: 1015px;
+  }
+
+  .tweet-box {
+    width: 30.833333332%;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 50em) {
+  p.grid-col-6 {
+    width: 97.499999996%;
+    text-align: center;
+  }
+
+  .testimonial-box time {
+    width: 22.499999999%;
+  }
+
+  .testimonial-box figure {
+    width: 64.166666664%;
+  }
+
+  .portfolio-items li {
+    width: 47.499999998%;
+  }
+
+  .portfolio-menu li {
+    width: 19.8%;
+  }
+
+  .portfolio-menu .icon {
+    margin-right: 0;
+  }
+
+  .portfolio-menu-text {
+    display: none;
+  }
+
+  .team-box_description {
+    margin-bottom: 36px;
+    width: 23%;
+  }
+
+  .team-box_description h3 {
+    margin-top: 50px;
+  }
+
+  .team-box_description p {
+    display: none;
+  }
+
+  .team-box_image {
+    width: 21.3%;
+  }
+
+  .price-box_time {
+    line-height: 53px;
+  }
+
+  #news-article img {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  #news-article .image-left,
+  #news-article .image-right {
+    float: none;
+  }
+
+  .product-box {
+    width: 237px;
+  }
+
+  .news-box {
+    width: 370px;
+  }
+
+  .twitter-container {
+    max-width: 794px;
+  }
+
+  .tweet-box {
+    width: 47.499999998%;
+    height: 175px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .product-box {
+    width: 227px;
+  }
+
+  .news-box {
+    width: 354px;
+  }
+
+  .twitter-container {
+    max-width: 762px;
+  }
+}
+@media only screen and (max-width: 37.6875em) {
+  .portfolio-menu li {
+    width: 19.7%;
+  }
+
+  .team-box_description {
+    margin-bottom: 0;
+    width: 64.166666664%;
+  }
+
+  .team-box_image {
+    width: 30.833333332%;
+  }
+
+  .team-box_image img {
+    width: 100%;
+  }
+
+  .team-box_image .image-hover a:first-of-type {
+    left: 10%;
+  }
+
+  .team-box_image .image-hover a:last-of-type {
+    right: 10%;
+  }
+
+  .price-box_price {
+    font-size: 5em;
+  }
+
+  .price-box dt,
+  .price-box dd {
+    display: block;
+  }
+
+  .skills-section,
+  .team-section .section-title {
+    width: 97.499999996%;
+  }
+
+  .team-box_description p {
+    display: block;
+  }
+
+  .team-box_description h3 {
+    margin-top: 25px;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 97.499999996%;
+  }
+
+  .product-box,
+  .news-box {
+    width: 272px;
+  }
+
+  .twitter-container {
+    max-width: 596px;
+  }
+}
+@media only screen and (max-width: 33.3125em) {
+  .product-box, .news-box {
+    width: 238px;
+  }
+
+  .twitter-container {
+    max-width: 522px;
+  }
+
+  .tweet-box {
+    width: 47.499999998%;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 22.5em) {
+  .big-dual-button {
+    margin-left: 0 !important;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+  }
+
+  .big-dual-button a {
+    width: 100%;
+    padding: 0.8em 0px;
+  }
+
+  .big-dual-button a:first-child,
+  .big-dual-button a:last-child {
+    border-radius: 0;
+    border: none;
+  }
+
+  #main-header .big-dual-button {
+    bottom: 0;
+  }
+
+  .big-dual-button:after {
+    display: none;
+  }
+
+  #main-header .a-icon {
+    font-size: 2.5em;
+  }
+
+  #main-header h1 {
+    font-size: 4em;
+    line-height: 1;
+  }
+
+  #main-header h2 {
+    font-size: 1.4em;
+  }
+
+  .title-lines_left,
+  .title-lines_right {
+    display: none;
+  }
+
+  .service-box,
+  .price-box,
+  .testimonial-box time,
+  .testimonial-box figure,
+  .title-bottom-line hr,
+  .news-menu {
+    width: 97.499999996%;
+  }
+
+  .price-box dt,
+  .price-box dd {
+    display: inline;
+  }
+
+  .title-bottom-line hr {
+    margin-left: 1.25% !important;
+  }
+
+  .portfolio-menu li {
+    width: 19.6%;
+  }
+
+  .image-hover_info p {
+    display: none;
+  }
+
+  .news-menu li {
+    width: 100%;
+  }
+
+  .news-wrap {
+    padding-top: 2px;
+  }
+
+  .news-menu {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .news-menu.secondary-menu li:nth-child(n+2) {
+    border-left: 1px solid #ccc;
+  }
+
+  .team-box_description p {
+    display: none;
+  }
+
+  .product-box, .news-box {
+    width: 330px;
+  }
+
+  #main-title {
+    position: absolute;
+    top: 30%;
+    margin-top: 0 !important;
+  }
+
+  #main-header .social-icons {
+    position: absolute;
+    top: 52%;
+  }
+
+  .wrapper > .container {
+    padding: 50px 0px;
+  }
+
+  .twitter-container {
+    max-width: 354px;
+  }
+
+  .tweet-box {
+    width: 97.499999996%;
+    height: 175px;
+  }
+}
+@media only screen and (max-width: 20em) {
+  #main-title {
+    position: absolute;
+    top: 25%;
+    margin-top: 0 !important;
+  }
+
+  #main-header .social-icons {
+    position: absolute;
+    top: 50%;
+  }
+
+  .product-box, .news-box {
+    width: 290px;
+  }
+
+  #main-header .hgroup {
+    border-bottom: 0;
+  }
+
+  .hgroup h2 {
+    line-height: 25px;
+    font-size: 1.5em;
+  }
+
+  .twitter-container {
+    max-width: 314px;
+  }
+}
+/* ==========================================================================
+   7.1 Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
