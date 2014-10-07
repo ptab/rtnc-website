@@ -645,17 +645,26 @@ textarea {
   line-height: 50px;
   margin: 25px 0;
 }
+
 .main-title figure {
   background-color: rgba(255, 255, 255, 0.8);
   margin-left: auto;
   margin-right: auto;
-  max-width: 464px;
-  max-height: 143px;
-  padding-bottom: 12px;
-  padding-top: 10px;
-  padding-left: 6px;
-  padding-right: 8px;
+  width: 110%;
+  max-width: 38.5%;
+  height: 105%;
+  max-height: 12.931034%;
+  padding-top: 0.85%;
+  padding-bottom: 0.95%;
+  padding-left: 1.05%;
+  padding-right: 1.15%;
   border-radius: 10px;
+}
+
+.main-title img{
+  max-width: 100%;
+  max-height: 100%;
+  
 }
 
 .main-title blockquote {
@@ -663,6 +672,35 @@ textarea {
   font-weight: 300;
   line-height: 50px;
   margin: 25px 0;
+}
+
+.retorno figure {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 97.499999996%;
+  max-height: 97.499999996%;
+  text-align: center;
+}
+
+.mapa figure {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 97.499999996%;
+  max-height: 56,25%;
+  text-align: center;
+}
+
+.retorno img{
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 20px;
+}
+
+.mapa iframe{
+  max-width: 100%;
+  width: 640px; 
+  max-height: 56,25%;
+  height: 345px;
 }
 
 .section-separator figcaption {
@@ -1276,6 +1314,18 @@ textarea.error {
     margin-top: 0 !important;
   }
 
+  #retorno {
+    position: absolute;
+    top: 30%;
+    margin-top: 0 !important;
+  }
+  
+  #mapa {
+    position: absolute;
+    top: 30%;
+    margin-top: 0 !important;
+  }
+  
   #main-header .social-icons {
     position: absolute;
     top: 52%;
@@ -1301,6 +1351,18 @@ textarea.error {
     margin-top: 0 !important;
   }
 
+  #retorno {
+    position: absolute;
+    top: 25%;
+    margin-top: 0 !important;
+  }  
+  
+  #mapa {
+    position: absolute;
+    top: 25%;
+    margin-top: 0 !important;
+  }  
+  
   #main-header .social-icons {
     position: absolute;
     top: 50%;
