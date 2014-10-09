@@ -2688,69 +2688,21 @@ a.meanmenu-reveal {
 
 
   .news-box {
-    width: 370px;
+    width: 46.25%;
   }
 
 }
 @media only screen and (max-width: 48em) {
-  .product-box {
-    width: 227px;
-  }
 
   .news-box {
-    width: 354px;
+    width: 46.09375%;
   }
 
-  .twitter-container {
-    max-width: 762px;
-  }
-}
 @media only screen and (max-width: 37.6875em) {
-  .portfolio-menu li {
-    width: 19.7%;
-  }
-
-  .team-box_description {
-    margin-bottom: 0;
-    width: 64.166666664%;
-  }
-
-  .team-box_image {
-    width: 30.833333332%;
-  }
-
-  .team-box_image img {
-    width: 100%;
-  }
-
-  .team-box_image .image-hover a:first-of-type {
-    left: 10%;
-  }
-
-  .team-box_image .image-hover a:last-of-type {
-    right: 10%;
-  }
-
-  .price-box_price {
-    font-size: 5em;
-  }
-
-  .price-box dt,
-  .price-box dd {
-    display: block;
-  }
 
   .skills-section,
   .team-section .section-title {
     width: 97.499999996%;
-  }
-
-  .team-box_description p {
-    display: block;
-  }
-
-  .team-box_description h3 {
-    margin-top: 25px;
   }
 
   .contact-form,
@@ -2758,28 +2710,16 @@ a.meanmenu-reveal {
     width: 97.499999996%;
   }
 
-  .product-box,
   .news-box {
-    width: 272px;
+    width: 45.1077943%;
   }
 
-  .twitter-container {
-    max-width: 596px;
-  }
 }
 @media only screen and (max-width: 33.3125em) {
-  .product-box, .news-box {
-    width: 238px;
+  .news-box {
+    width: 44.652908%;
   }
 
-  .twitter-container {
-    max-width: 522px;
-  }
-
-  .tweet-box {
-    width: 47.499999998%;
-    height: 200px;
-  }
 }
 @media only screen and (max-width: 22.5em) {
   .big-dual-button {
