@@ -2665,72 +2665,15 @@ a.meanmenu-reveal {
  *
  */
 @media only screen and (max-width: 64em) {
-  .product-box {
-    width: 226px;
-  }
 
   .news-box {
-    width: 312px;
-  }
-
-  .twitter-container {
-    max-width: 1015px;
-  }
-
-  .tweet-box {
-    width: 30.833333332%;
-    height: 200px;
+    width: 30.46875%;
   }
 }
 @media only screen and (max-width: 50em) {
   p.grid-col-6 {
     width: 97.499999996%;
     text-align: center;
-  }
-
-  .testimonial-box time {
-    width: 22.499999999%;
-  }
-
-  .testimonial-box figure {
-    width: 64.166666664%;
-  }
-
-  .portfolio-items li {
-    width: 47.499999998%;
-  }
-
-  .portfolio-menu li {
-    width: 19.8%;
-  }
-
-  .portfolio-menu .icon {
-    margin-right: 0;
-  }
-
-  .portfolio-menu-text {
-    display: none;
-  }
-
-  .team-box_description {
-    margin-bottom: 36px;
-    width: 23%;
-  }
-
-  .team-box_description h3 {
-    margin-top: 50px;
-  }
-
-  .team-box_description p {
-    display: none;
-  }
-
-  .team-box_image {
-    width: 21.3%;
-  }
-
-  .price-box_time {
-    line-height: 53px;
   }
 
   #news-article img {
@@ -2743,22 +2686,11 @@ a.meanmenu-reveal {
     float: none;
   }
 
-  .product-box {
-    width: 237px;
-  }
 
   .news-box {
     width: 370px;
   }
 
-  .twitter-container {
-    max-width: 794px;
-  }
-
-  .tweet-box {
-    width: 47.499999998%;
-    height: 175px;
-  }
 }
 @media only screen and (max-width: 48em) {
   .product-box {
