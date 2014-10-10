@@ -2676,6 +2676,12 @@ a.meanmenu-reveal {
     text-align: center;
   }
 
+  .section-separator blockquote {
+  font-size: 1.0em;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 18px 0;
+  
   #news-article img {
     width: 100%;
     margin-bottom: 25px;
