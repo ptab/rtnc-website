@@ -2669,6 +2669,13 @@ a.meanmenu-reveal {
   .news-box {
     width: 226px;
   }
+  
+  .section-separator blockquote {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 45px;
+  margin: 20px 0;
+  
 }
 @media only screen and (max-width: 50em) {
   p.grid-col-6 {
@@ -2677,7 +2684,7 @@ a.meanmenu-reveal {
   }
 
   .section-separator blockquote {
-  font-size: 1.0em;
+  font-size: 1.2em;
   font-weight: 300;
   line-height: 40px;
   margin: 18px 0;
