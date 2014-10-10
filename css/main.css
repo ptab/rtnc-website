@@ -2758,6 +2758,38 @@ a.meanmenu-reveal {
 }
 @media only screen and (max-width: 22.5em) {
 
+#section-separator_1 {
+  background: url("../img/backgrounds/bg_2.jpg") 50% 0% no-repeat fixed;
+  background-size: 100% 100%; 
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+}
+
+#section-separator_2 {
+  background: url("../img/backgrounds/bg_3.jpg") 50% 0% no-repeat fixed;
+  background-size: 100% 100%; 
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+}
+
+#section-separator_3 {
+  background: url("../img/backgrounds/bg_4.jpg") 50% 0% no-repeat fixed;
+  background-size: 100% 100%; 
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+}
+
+#section-separator_4 {
+  background: url("../img/backgrounds/bg_5.jpg") 50% 0% no-repeat fixed;
+  background-size: 100% 100%; 
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+}
+
   .section-separator blockquote {
   font-size: 1.0em;
   font-weight: 300;
