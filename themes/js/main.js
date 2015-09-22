@@ -2,7 +2,7 @@
  * Lightflow - HTML5 Template
  * File Description: This file contain all the jQuery/Javascript code for this template, for plugins see the plugins.js file
  * 
- * Author: Jaime Hernández Avitia (Jaheravy)
+ * Author: Jaime HernÃ¡ndez Avitia (Jaheravy)
  * 
  * Website: http://www.jaheravy.com/
  * Twitter: http://www.twitter.com/jaheravy
@@ -34,7 +34,30 @@
  * 
  */
 
-$(document).ready(function() {
+/*global $:false */
+
+jQuery(window).load(function(){
+   setTimeout(function(){ 
+	jQuery('.news-menu_news').trigger('click');
+   }, 1000);
+});
+jQuery(document).ready(function($) {'use strict';
+	
+	if(jQuery(window).width()>=768){
+		jQuery(window).stellar({
+			horizontalOffset: 0,
+			horizontalScrolling: false,
+			verticalOffset: 0
+		});
+	}
+	parallax_disable();
+	$(window).load(function(){
+      $("#wp-nav").sticky({ topSpacing: 0 });
+    });
+
+    $(window).load(function(){
+      $("#main-nav").sticky({ topSpacing: 0 });
+    });
 
 	$(window).load(function(){
 		// Execute only when all the files are loaded
@@ -42,32 +65,30 @@ $(document).ready(function() {
 		lightflowRcaroufredsel();
 	
 		// Parallax effect MUST BE AFTER CAROUFREDSEL OTHERWISE PARALLAX WILL CRASH
-		$('#section-separator_1').parallax("50%", 0.5);
-		$('#section-separator_2').parallax("50%", 0.5);
-		$('#section-separator_3').parallax("50%", 0.5);
-		$('#section-separator_4').parallax("50%", 0.5);
-		$('#section-separator_5').parallax("50%", 0.5);
+		
 	});
 
 	$(window).resize(function(){
+		parallax_disable();
 		// update some things on resize (and after 200 milliseconds of that)
 		if ( !$('html').hasClass('lt-ie9') ){
 			$.doTimeout('resize', 200, function(){
+				'use strict';
 				lightflowHeader();
 				lightflowCenter();
 				lightflowMenubp();
 				lightflowTitleLines();
 				lightflowRcaroufredsel();
 				
-				$('#section-separator_1').parallax("50%", 0.5);
-				$('#section-separator_2').parallax("50%", 0.5);
-				$('#section-separator_3').parallax("50%", 0.5);
-				$('#section-separator_4').parallax("50%", 0.5);
-				$('#section-separator_5').parallax("50%", 0.5);
+				
 			});
 		}
 	});
 	
+	
+	// ========== TWITTER FEED ========== //
+	
+
 	
 	
 	// ========== HEADER ========== //
@@ -76,16 +97,13 @@ $(document).ready(function() {
 	
 	function lightflowHeader()
 	{
+		'use strict';
 		// Helper variables
 		var container = '#main-header';
 		var contentHeight = 0;
 		var windowHeight = ($(window).height());
 		var firstElementType = 'div';
-		var firstElementMargin = parseInt($(container + ' ' + firstElementType + ':first').css('marginTop'));
-		var containerWidth = $(container).width();
-		var ctaButton = '.big-dual-button';
-		var ctaButtonWidth = $(ctaButton).width();
-		
+		var firstElementMargin = parseInt($(container + ' ' + firstElementType + ':first').css('marginTop'),null);
 		
 		// Set the header height with the window height value
 		$(container).height(windowHeight + 'px');
@@ -129,24 +147,26 @@ $(document).ready(function() {
 		duration: 500
 	});
 	
+	
 	// ========== PORTFOLIO ========== //
 	
 	lightflowPortfolio();
 	
 	function lightflowPortfolio()
 	{
+		'use strict';
 		// Helper variables
 		var portfolioMenu = '.portfolio-menu';
 		var portfolioItems = '.portfolio-items';
 										
-		$(portfolioMenu + ' a').click(function(e){
+		$(portfolioMenu + ' a').click(function(e){'use strict';
 			e.preventDefault();
 			
 			// Get the category of the element clicked
 			var activeCat = $(this).data('portfoliocat');
 			
 			// Set the opacity
-			if (activeCat == 'all'){
+			if (activeCat === 'all'){
 				$(portfolioItems + ' > *').stop().animate({
 					'opacity' : 1
 				}, 250 );
@@ -178,6 +198,7 @@ $(document).ready(function() {
 		
 	function lightflowRcaroufredsel()
 	{
+		'use strict';
 		$(".products-container").carouFredSel({
 			circular: false,
 			infinite: false,
@@ -304,6 +325,7 @@ $(document).ready(function() {
 	
 	function lightflowNews()
 	{
+		'use strict';
 		$('.news-menu_twitter').click(function(e){
 			e.preventDefault();
 						
@@ -314,11 +336,7 @@ $(document).ready(function() {
 					$('.twitter-container').slideDown('normal');
 				});
 				
-				$('#section-separator_1').parallax("50%", 0.5);
-				$('#section-separator_2').parallax("50%", 0.5);
-				$('#section-separator_3').parallax("50%", 0.5);
-				$('#section-separator_4').parallax("50%", 0.5);
-				$('#section-separator_5').parallax("50%", 0.5);
+				
 			});
 			
 		});
@@ -332,34 +350,10 @@ $(document).ready(function() {
 						'marginLeft' : 0
 					}, 250);
 					
-					$('#section-separator_1').parallax("50%", 0.5);
-					$('#section-separator_2').parallax("50%", 0.5);
-					$('#section-separator_3').parallax("50%", 0.5);
-					$('#section-separator_4').parallax("50%", 0.5);
-					$('#section-separator_5').parallax("50%", 0.5);
+					
 				});
 			});
 
-		});
-		
-		$('.read-article').click(function(e){			
-			e.preventDefault();
-							
-			var link = $(this).data('news_file');
-			
-			$('#news-article').slideUp(1000, function(){
-				$(this).load(link, function(){
-					$(this).slideDown(1000, function(){
-											
-						$('#section-separator_1').parallax("50%", 0.5);
-						$('#section-separator_2').parallax("50%", 0.5);
-						$('#section-separator_3').parallax("50%", 0.5);
-						$('#section-separator_4').parallax("50%", 0.5);
-						$('#section-separator_5').parallax("50%", 0.5);
-					});
-				});
-			});
-									
 		});
 	}
 	
@@ -370,15 +364,15 @@ $(document).ready(function() {
 	
 	function lightflowCenter()
 	{
+		'use strict';
 		$('.center').each(function(){
-			$(this).css('marginLeft', ($(this).parent().width() / 2) - ($(this).outerWidth() / 2) ) + 'px';
+			'use strict';
+			var width1 = $(this).parent().width() / 2;
+			var width2 = $(this).outerWidth() / 2;
+			var cen_width = width1 - width2;
+			$(this).css('marginLeft', cen_width + 'px');
 		});
 	}
-	
-	
-	// ========== BACKSTRETCH ========== //
-	
-	$.backstretch("img/backgrounds/bg_1.jpg");
 	
 	
 	// ========== MENU BREAKPOINT ========== //
@@ -388,6 +382,7 @@ $(document).ready(function() {
 	
 	function lightflowMenubp()
 	{
+		'use strict';
 		// Helper variables
 		var navContainer = '#main-nav';
 		var headerContainer = '#main-header';
@@ -402,7 +397,7 @@ $(document).ready(function() {
 			scroll_pos = $(this).scrollTop();
 			
 			if(scroll_pos > breakpoint) {
-				if (i == 0){
+				if (i === 0){
 					$(navContainer).stop().animate({
 						backgroundColor: newColor
 					}, 500);
@@ -410,7 +405,7 @@ $(document).ready(function() {
 				}	
 			} 
 			else {
-				if (i == 1){
+				if (i === 1){
 					$(navContainer).stop().animate({
 						backgroundColor: defaultColor
 					}, 250 );
@@ -428,12 +423,13 @@ $(document).ready(function() {
 	
 	function lightflowProgressBar()
 	{
+		'use strict';
 		// Helper variable
 		var progressBarName = '.skills-list_item-active';
 		
 		// Set the width with the progress value to each element
 		$(progressBarName).each(function(){
-			$(this).width($(this).data('progress') + '%')
+			$(this).width($(this).data('progress') + '%');
 		});
 	}
 	
@@ -442,6 +438,7 @@ $(document).ready(function() {
 
 	function lightflowTitleLines()
 	{
+		'use strict';
 		// Helper variables
 		var titleContainer = '.section-title';
 		// Array with all the widths of the title containers
@@ -486,8 +483,8 @@ $(document).ready(function() {
 			
 			// Create lines
 			$(this).prepend('<div class="title-lines_left">&nbsp;</div>')
-				   .append('<div class="title-lines_right">&nbsp;</div>');
-				   
+				.append('<div class="title-lines_right">&nbsp;</div>');
+
 		});
 		
 		// Set the width of the lines in the left side
@@ -528,6 +525,7 @@ $(document).ready(function() {
 
 	function lightflowImageHover()
 	{
+		'use strict';
 		// Helper variables
 		var imageContainer = '.image';
 		var imageHover = '.image-hover';
@@ -572,6 +570,7 @@ $(document).ready(function() {
 	
 	function lightflowServiceBox()
 	{
+		'use strict';
 		// Helper variables
 		var boxName = '.service-box';
 		var boxTitle = 'h3';
@@ -617,22 +616,28 @@ $(document).ready(function() {
 	
 	$('.contact-form').validate();
 	
-	$('.contact-form').submit(function(e){
-		e.preventDefault();
-		
-		// Check if the form is OK, then send it
-		if ($('.contact-form').valid()){
-			$('.contact-form button[action="submit"]').html('Sending...');
-			$.post('contact.php', $('.contact-form').serialize(),  function() {
-				$('.contact-form button[action="submit"]').html('Your message has been sent');
-				$('.contact-form button[action="submit"]').append('<span class="icon">&#10003;</span>');
-				$('.contact-form')[0].reset();
-			});
-		}
+
+
+
+	
+	$('.single-work-view').magnificPopup({
+		type: 'ajax'
+	});
+	
+	$('.bxslider').bxSlider({
+		adaptiveHeight: true,
+		mode: 'fade',
+		pager:false,
+		controls:true
 	});
 
-	$('.contact-form input').focus(function(){
-		$('.contact-form button[action="submit"]').html('Send');
-	})
+	$('.mobi-menu').click(function(){
+		$('#wp-navigation').slideToggle('slow');
+	});
 
 });
+function parallax_disable(){
+	if (jQuery(window).width() < 1024) {
+		jQuery('.parralax_section').removeAttr('data-stellar-background-ratio data-stellar-offset-parent');
+	}
+}

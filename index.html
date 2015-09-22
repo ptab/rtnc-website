@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -15,16 +14,44 @@
         
         <!-- Web Fonts -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300|Lato:400,100,300,700">
+
+           
+        <!-- CSS NOVOS -->
+		<link rel='stylesheet' id='contact-form-7-css'  href="http://www.craquesdeestudo.pt/TESTES/plugins/contact-form-7/includes/css/styles.css" type='text/css' media='all' />
+		<link rel='stylesheet' id='lightflow-style-css'  href="http://www.craquesdeestudo.pt/TESTES/themes/style.css" type='text/css' media='all' />
+		<link rel='stylesheet' id='lightflow-style-dy-css'  href="http://www.craquesdeestudo.pt/TESTES/themes/css/default.css" type='text/css' media='all' />
+		<link rel='stylesheet' id='lightflow-blog-css'  href="http://www.craquesdeestudo.pt/TESTES/themes/css/blog.css" type='text/css' media='all' />
+		<link rel='stylesheet' id='lightflow-icon-css'  href="http://www.craquesdeestudo.pt/TESTES/themes/css/icon.css" type='text/css' media='all' />
+		<link rel='stylesheet' id='lightflow-bxslider-css'  href="http://www.craquesdeestudo.pt/TESTES/themes/css/jquery.bxslider.css" type='text/css' media='all' />
+		<link rel='stylesheet' id='lightflow-magnific-css'  href="http://www.craquesdeestudo.pt/TESTES/themes/css/magnific-popup.css" type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='lightflow-ie-css'  href="themes/css/ie9.css" type='text/css' media='all' />
+<![endif]-->
+		<script type='text/javascript' src="js/jquery/jquery.js"></script>
+		<script type='text/javascript' src="js/jquery/jquery-migrate.min.js"></script>
+			
+			
+
+		<style type="text/css">
+			@media(min-width:768px){
+				.light_logo{
+					margin-top:0px"
+				}
+			}
+			@media(min-width:768px) and (max-width: 1024px){
+				.light_logo{
+					margin-left:10px;
+				}
+				#main-nav li {
+				  padding: 30px 5px;
+				}
+			}
+			
+		</style>
+
 		
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!--[if IE 8]> <link rel="stylesheet" href="css/ie8.css"> <![endif]-->
-        <!--[if IE 9]> <link rel="stylesheet" href="css/ie9.css"> <![endif]-->
-        
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-              
     </head>
-    <body>
+    <body class="home page page-id-16 page-template page-template-parallax page-template-parallax-php">
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser and some functions of this site may not work. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -42,17 +69,19 @@
 
 
 <!-- Main header -->
-		<div class="header-wrapper">
-			<header id="main-header" class="container clearfix"> <!-- Header of the page -->
-				<div id="main-title" class="grid-col-12">
-					<div id="main-title" class="main-title">
-						<figure>
-							<img src="img/backgrounds/rtnc.png" alt="RTNC">
-						</figure>
+		
+		<div id="home" class="post-9 section type-section status-publish format-standard hentry" >
+			<div class="header-wrapper">
+				<header id="main-header" class="container clearfix">
+					<div id="main-title" class="grid-col-12">
+						<div id="main-title" class="main-title">
+							<figure>
+								<img src="img/backgrounds/rtnc.png" alt="RTNC">
+							</figure>
+						</div>
 					</div>
-				</div>
-				
-			</header>
+				</header>
+			</div>
 		</div>		
 		
 
@@ -63,7 +92,7 @@
 					<div class="section-title">
 						<h1>A Empresa</h1>
 					</div>
-					<h2>A <b>RTNC, Consultores de Engenharia, Lda</b> é um gabinete de projectos, coordenação, controlo e gestão de empreendimentos, apta a dar resposta a todas as necessidades do dono de obra.</h2>
+					<h2>A <b>RTNC, Consultores de Engenharia, Lda</b> é um gabinete de projectos, coordenação, controlo e gestão de empreendimentos, apto a dar resposta a todas as necessidades do dono de obra.</h2>
 				</div>
 
 					<div class="clearfix"> <!-- Text in colums -->
@@ -100,15 +129,16 @@
         
 	
 <!-- Separator 1 -->        
-        <div id="section-separator_1" class="section-separator">
-			<figure>
-				<blockquote>
+		<div class="parallax_outer">
+			<div id="section-10" class="section-separator parralax_section"  style="background-image:url('http://rtnc.pt/img/backgrounds/bg_2.jpg');" data-stellar-background-ratio="0.2"  data-stellar-offset-parent="true">
+				<figure>
+					<blockquote>
 					O seu sucesso é a fundação para o nosso crescimento
-				</blockquote>
-			</figure>
+					</blockquote>
+				</figure>
+			</div>
 		</div>
-      
-      
+
 <!-- SECTION: Serviços -->
 		<div class="wrapper">        
 			<section id="products-section" class="container clearfix"> 
@@ -116,9 +146,8 @@
 					<div class="section-title">
 						<h1>SERVIÇOS</h1>
 					</div>
-				</div>
 					<h2>A RTNC está apta a fornecer <b>serviços inerentes a todo processo construtivo</b>.</h2>
-					<div class="clearfix"> <!-- Text in colums -->
+				</div>					<div class="clearfix"> <!-- Text in colums -->
 						<p class="grid-col-6">A versatilidade dos serviços prestados pela RTNC permite-lhe contratar apenas os serviços que necessite, um conjunto de serviços à sua medida ou até mesmo todos os serviços que tem à sua disposição.</p>
 						<p class="grid-col-6">Quer em empreendimentos novos ou em obras de reabilitação de património existente, poderá contar com a RTNC de modo a garantir a sua execução com qualidade, assegurando os prazos e os custos previstos.</p>
 					</div>
@@ -150,15 +179,16 @@
 		</div> <!-- End of wrapper --> 
         
 <!-- Separator 2 --> 
-		<div id="section-separator_2" class="section-separator">
-			<figure>
-				<blockquote>
+		<div class="parallax_outer">
+			<div id="section-10" class="section-separator parralax_section"  style="background-image:url('http://rtnc.pt/img/backgrounds/bg_3.jpg');" data-stellar-background-ratio="0.2"  data-stellar-offset-parent="true">
+				<figure>
+					<blockquote>
 					Construímos relações sólidas
-				</blockquote>
-			</figure>
+					</blockquote>
+				</figure>
+			</div>
 		</div>
-        
-       
+      
 <!-- SECTION: Portfolio -->
 		<div class="wrapper">        
 			<section id="portfolio-section" class="container clearfix"> 
@@ -174,22 +204,22 @@
 				<h2><b>PROJECTOS PARA EMPREENDIMENTOS NOVOS</b></h2>
 						<h4><span style="font-size: large"><i>Serviços multidisciplinares de projecto, enquanto um todo (projectos globais), ou apenas de especialidades.</i></span></h4>
 					<h3>GLOBAIS</h3>
-                        <h4>Projectos multidisciplinares</h4>
+                        <h4><span style="font-size: medium">Projectos multidisciplinares</span></h4>
 							<p><span style="font-size: small">Aproveitamento de fundos vazados para habitação na Baixa da Banheira, em Gondomar e em Vila Nova de Gaia<br><br>Centro de Formação do Pessoal Técnico e Comercial da IVECO PORTUGAL, Vila Franca de Xira<br><br>Oficina de montagem e reparação de veículos, incluindo armazém de peças da IVECO PORTUGAL, Vila Franca de Xira<br><br>Escritórios administrativos e comerciais da IVECO PORTUGAL, Vila Franca de Xira<br><br>Entreposto fruteiro MARBAN, Alverca<br><br>Armazém fruteiro para a MARTINS & SANTOS, Fundão<br><br>Armazém fruteiro para a COVIFRUTAS, Fundão<br><br>Sede do Grupo Desportivo e Recreativo da Bela Vista (GDRBV), Setúbal<br><br>Lojas para comércio no Plano Integrado de SetúbalSede do Centro de Reformados e Idosos do Vale da Amoreira (CRIVA), Baixa da Banheira <br><br>Sala de Teatro no Plano Integrado de Setúbal<br><br>Ampliação do HOTEL MUNDIAL (****), Lisboa<br><br></span></p>
 					<h3>ESTABILIDADE</h3>
-                        <h4>Projectos de estruturas</h4>
+                        <h4><span style="font-size: medium">Projectos de estruturas</span></h4>
 						<p><span style="font-size: small">Conjunto habitacional (96 fogos) de Mira Sintra, Agualva-Cacém<br><br>Instalações desportivas e recreativas do CLUBE VII, Lisboa <br><br>Sete edifícios de habitação em Laveiras, CaxiasPavilhão gimnodesportivo do CLUBE DE CAMPISMO DE LISBOA, Lisboa<br><br>Conjunto habitacional (96 fogos) na Quinta do Lactário I, Lisboa<br><br></span></p>
 					<h3>Eléctricas</h3>
-                        <h4>Projectos de instalações eléctricas, comunicação e segurança</h4>
+                        <h4><span style="font-size: medium">Projectos de instalações eléctricas, comunicação e segurança</span></h4>
 							<p><span style="font-size: small">Conjunto habitacional (96 fogos) de Mira Sintra, Agualva-Cacém<br><br>Conjunto habitacional (72 fogos) de Mira Sintra, Agualva-Cacém<br><br>Instalações desportivas e recreativas do CLUBE TAP-AIR PORTUGAL, Lisboa <br><br>Novas instalações da BERGEAUD PORTUGAL, Massamá<br><br>Instalações desportivas e recreativas do CLUBE VII, Lisboa <br><br>Pavilhão gimnodesportivo do CLUBE DE CAMPISMO DE LISBOA, Lisboa<br><br>Hotel de apartamentos SOLPLAY (****), Linda-a-Velha<br><br></span></p>
 					<h3>Águas</h3>
-                        <h4>Projectos de águas, esgotos e gás</h4>
+                        <h4><span style="font-size: medium">Projectos de águas, esgotos e gás</span></h4>
 							<p><span style="font-size: small">Instalações desportivas e recreativas do CLUBE TAP-AIR PORTUGAL, Lisboa <br><br>Novas instalações da BERGEAUD PORTUGAL, em Massamá<br><br>Pavilhão gimnodesportivo do CLUBE DE CAMPISMO DE LISBOA<br><br>Instalações desportivas e recreativas do CLUBE VII, Lisboa <br><br>Hotel de apartamentos SOLPLAY (****), Linda-a-Velha<br><br>Conjunto habitacional (96 fogos) na Quinta do Lactário, Lisboa<br><br></span></p>
 					<h3>MECÂNICAS</h3>
-                        <h4>Projectos de instalações mecânicas</h4>
+                        <h4><span style="font-size: medium">Projectos de instalações mecânicas</span></h4>
 							<p><span style="font-size: small">Instalações desportivas e recreativas do CLUBE VII, Lisboa <br><br>Hotel de apartamentos SOLPLAY (****), Linda-a-Velha<br><br></span></p>
 					<h3>URBANIZAÇÃO</h3>
-                        <h4>Projectos de urbanização</h4>
+                        <h4><span style="font-size: medium">Projectos de urbanização</span></h4>
 							<p><span style="font-size: small">Infra-estruturas de urbanização, Vialonga<br><br>Arruamentos no Plano Integrado do Zambujal<br><br>Infra-estruturas de urbanização em Laveiras, Caxias<br><br>Plano de urbanização da Herdade do Montalvo, Alcácer do Sal<br><br>Arruamentos para a sede da IVECO PORTUGAL, Vila Franca de Xira<br><br><br></span></p>
 	
 				<h2><b>PROJECTOS PARA REABILITAÇÃO DE EDIFÍCIOS</b></h2>
@@ -212,22 +242,24 @@
 				<h2><b>CONSULTADORIA</b></h2>
 						<h4><span style="font-size: large"><i>Elaboração de pareceres técnicos independentes sempre que necessário esclarecer questões do foro da engenharia civil.</i></span></h4>                               
 					<h3>ANÁLISE DE CUSTOS</h3>
-                        <h4>Análise dos custos de reabilitação previstos para o FUNDO REMANESCENTE DE RECONSTRUÇÃO DO CHIADO</h4>
+                        <h4><span style="font-size: medium">Análise dos custos de reabilitação previstos para o FUNDO REMANESCENTE DE RECONSTRUÇÃO DO CHIADO</span></h4>
 							<p><span style="font-size: small">Igreja da Encarnação<br><br>Imóvel sito no Largo do Carmo<br><br>Imóvel sito na Rua da Misericórdia<br><br>Imóveis sitos na Rua da Condessa<br><br>Imóvel sito na Rua Serpa Pinto<br><br>Imóvel sito na Rua das Flores<br><br>Imóveis sitos na Rua do Duque<br><br>Imóvel sito na Rua Ivens<br><br></span></p>
 					<h3>APOIO TÉCNICO</h3>
-                        <h4>Apoio técnico independente na resolução de conflitos e avaliação de dados</h4>
+                        <h4><span style="font-size: medium">Apoio técnico independente na resolução de conflitos e avaliação de dados</span></h4>
 							<p><span style="font-size: small">Consultores da UNITAGUS num processo de indemnização, solicitado pela CONTACTO, SA<br><br>Consultores da UNITAGUS num processo de indemnização, solicitado pela PARQUE EXPO<br><br>Peritagem judicial de conflitos para o Tribunal Judicial do Entroncamento<br><br>Peritagem judicial de conflitos para o Tribunal Judicial de Alcobaça<br><br>Peritagem judicial de conflitos para o Tribunal Judicial de Oeiras</span></p>
 				</div>
 			</section> <!-- End of portfolio section -->
 		</div> <!-- End of wrapper-->
         
 <!-- Separator 3 --> 
-        <div id="section-separator_3" class="section-separator">
-			<figure>
-				<blockquote>
+		<div class="parallax_outer">
+			<div id="section-10" class="section-separator parralax_section"  style="background-image:url('http://rtnc.pt/img/backgrounds/bg_4.jpg');" data-stellar-background-ratio="0.2"  data-stellar-offset-parent="true">
+				<figure>
+					<blockquote>
 					Há mais de 25 anos consigo
-				</blockquote>				
-			</figure>
+					</blockquote>
+				</figure>
+			</div>
 		</div>
 
         
@@ -248,7 +280,7 @@
 				
 				<div id="retorno" class="grid-col-12">
 					<h3><br>Investimento</h3>
-						<h4>Considere o custo associado aos serviços da RTNC como um investimento</h4>               
+						<h4><span style="font-size: medium">Considere o custo associado aos serviços da RTNC como um investimento</span></h4>               
 							<p>No primeiro gráfico é comparado o <b>valor do contrato da empreitada</b> com o <b>valor do contrato com a RTNC.</b></p>
 				</div>
 				
@@ -260,7 +292,7 @@
 				
                 <div id="retorno" class="grid-col-12">
 					<h3><br>Prazo</h3>
-						<h4>Todas as empreitadas têm um <b>prazo</b> associado. O incumprimento deste prazo pode levar à diminuição da rentabilidade do investimento, pelo que é essencial evitar desvios.</h4>
+						<h4><span style="font-size: medium">Todas as empreitadas têm um <b>prazo</b> associado. O incumprimento deste prazo pode levar à diminuição da rentabilidade do investimento, pelo que é essencial evitar desvios.</span></h4>
 							<p>No gráfico seguinte indica-se, em meses, qual o prazo de obra previsto e qual o prazo realizado.</p>
 				</div>
 				
@@ -282,7 +314,7 @@
                 
 				<div id="retorno" class="grid-col-12">
 					<h3><br>Trabalhos a mais</h3>
-						<h4>Os <b>trabalhos a mais</b> são a maior causa de derrapagens orçamentais, sendo portanto o centro deste estudo.</h4>                
+						<h4><span style="font-size: medium">Os <b>trabalhos a mais</b> são a maior causa de derrapagens orçamentais, sendo portanto o centro deste estudo.</span></h4>                
 							<p>Ainda de acordo com o mesmo relatório do Tribunal de Contas, a derrapagem orçamental média em obras públicas é de 128%.<br><br>Antes de serem aprovados pela RTNC, os trabalhos a mais são analisados e discutidos com o empreiteiro, quer no que diz respeito às suas quantidades, quer aos preços ou a eventuais prorrogações de prazos que acarretem. No gráfico seguinte apresentam-se, em percentagem, os trabalhos a mais propostos pelo empreiteiro e os trabalhos a mais aprovados pela RTNC. Em média, o valor dos trabalhos a mais <b>desce 35%</b> após a intervenção da RTNC.</p>
 				</div>
 				
@@ -294,7 +326,7 @@
                 
 				<div id="retorno" class="grid-col-12">
 					<h3><br>Retorno sobre o investimento</h3>
-						<h4>O <b>retorno sobre o investimento</b> (ROI) é utilizado para avaliar a <b>viabilidade do investimento</b> que se pretende realizar, comparando os lucros esperados desse investimento com o custo associado à sua implementação.</h4>                
+						<h4><span style="font-size: medium">O <b>retorno sobre o investimento</b> (ROI) é utilizado para avaliar a <b>viabilidade do investimento</b> que se pretende realizar, comparando os lucros esperados desse investimento com o custo associado à sua implementação.</span></h4>                
 							<p>Tradicionalmente é calculado pelo quociente da diferença entre o retorno e o investimento, e o valor do investimento. A equação seguinte demonstra o ROI da RTNC, <b>apenas</b> pela discussão dos trabalhos a mais com o empreiteiro.<br></p>
 				</div>
 				
@@ -322,12 +354,14 @@
 		</div> <!-- End of wrapper -->
         
 <!-- Separator 4 --> 
-        <div id="section-separator_4" class="section-separator">
-			<figure>
-				<blockquote>
+		<div class="parallax_outer">
+			<div id="section-10" class="section-separator parralax_section"  style="background-image:url('http://rtnc.pt/img/backgrounds/bg_5.jpg');" data-stellar-background-ratio="0.2"  data-stellar-offset-parent="true">
+				<figure>
+					<blockquote>
 					Com integridade consolidamos relações de confiança
-				</blockquote>
-			</figure>
+					</blockquote>
+				</figure>
+			</div>
 		</div>
         
         
@@ -347,7 +381,7 @@
 						<p>Rua Luís Derouet 8 cv D</p>
 						<p>1250-152 Lisboa</p>
 						<p>Telefone: <a href="tel:+351213913290"><span style="font-size: x-small">+351</span> 213 913 290</a></p>
-                        <p>Telefone: <span style="font-size: x-small">+351</span> 213 968 074</p> 
+                        <p>Fax: <span style="font-size: x-small">+351</span> 213 968 074</p> 
 						<p>E-mail: <a href="mailto:rtnc@rtnc.pt">rtnc@rtnc.pt</a></p> 
 						<p>Website: <a href="http://www.rtnc.pt">www.rtnc.pt</a></p>
 				</article>
@@ -368,18 +402,25 @@
 			<p>Copyright © 2013 RTNC, Lda. Todos os direitos reservados.</p>
         </footer>
         
-        <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+		<!-- JAVA NOVO -->
+		
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.50.0-2014.02.05"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/pixelcoder.net\/lightflow\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/plugins/contact-form-7/includes/js/scripts.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/plugins.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/jquery.cycle2.min.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/jquery.magnific-popup.min.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/jquery.sticky.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/jquery.stellar.min.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/themes/js/main.js"></script>
+		<script type='text/javascript' src="http://www.craquesdeestudo.pt/TESTES/js/comment-reply.min.js"></script>
+		<script type='text/javascript'>jQuery(document).ready(function($) {$('#home').backstretch(['img/backgrounds/slider_1.jpg','img/backgrounds/slider_2.jpg','img/backgrounds/slider_3.jpg'], {duration: 5000, fade: 1000})})</script>
+		
+	
     </body>
 </html>

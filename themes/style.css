@@ -1,0 +1,278 @@
+/*
+Theme Name: Lightflow
+Theme URI: http://pixelcoder.net/lightflow
+Author: Pixelcoder
+Author URI: http://pixelcoder.net
+Version: 1.5
+Tags: one-column
+Description: This is wonderful responsive theme for bussiness organization
+License: GNU General Public License
+License URI: license.txt
+Text Domain: Lightflow
+*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import url('css/normalize.css');
+.wp-caption{
+	max-width: 100%;
+}
+.wp-caption img{
+	max-width: 100%;
+	height: auto;
+}
+.wp-caption-text{
+	font-style: italic;
+	font-weight: 300;
+}
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption{
+	font-style: italic;
+	font-weight: 300;
+}
+.sticky {
+}
+.gallery-caption{
+}
+.bypostauthor{
+}
+.alignright {
+	float: right;
+}
+img.alignright{
+	margin: 5px 0 5px 20px;
+}
+.alignleft {
+	float: left;
+}
+img.alignleft{
+	float: left;
+	margin: 5px 20px 5px 0;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.aligncenter {
+	margin: 5px auto;
+}
+.wp-caption.alignleft{
+	margin: 5px 20px 5px 0;
+}
+.wp-caption.alignright{
+	margin: 5px 0 5px 20px;
+}
+#commentform{
+	padding: 0 10px 0 30px;
+}
+/*Modify style for navbar*/
+.light_logo{
+	float: left;
+	margin: 0;
+	max-height: 67px;
+	max-width: 200px;
+	overflow: hidden;
+	padding: 6px 0;
+}
+.light_logo img{
+	display: inline-block;
+	margin: 0;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 0;
+}
+#main-nav{}
+#main-nav ul{
+  float: center;
+}
+@media(max-width:767px){
+	.meanmenu-reveal {
+		margin-top: 5px;
+	}
+  .light_logo {
+	  display: block;
+	  float: left;
+	  margin: -32px 0 5px 15px;
+	  height: 35px;
+	  padding: 5px;
+	  width: 150px;
+	}
+}
+
+
+
+/*============================================================
+	Ipad Portrait 1024px
+==============================================================*/
+
+@media only screen and (max-width: 1024px) {
+	.parralax_section{
+		background-attachment: scroll !important;
+		background-position: center top !important;
+		background-size: cover !important;
+		height: auto;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+/*============================================================
+		iPhone 6 (Portrait) 375px
+==============================================================*/
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+
+	.title-lines_left,
+	.title-lines_right {
+		width: 55px !important;
+	}
+	.section-title {
+		text-align: center;
+	}
+	.section-title h1,
+	.section-title h2 {
+		margin-left: 0 !important;
+		font-size: 2.5em !important;
+	}
+	.hgroup h2 {
+		font-size: 2em !important;
+		line-height: 46px !important;
+	}
+	.box.service-box {
+		float: none;
+		margin: 30px auto 0;
+		width: 90%;
+	}
+	.box.price-box {
+		float: none;
+		margin: auto 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	div.price-box h3 {
+		margin: 55px 0 20px
+	}	
+	span.price-box_price {
+		line-height: 70px;
+	}
+	div.price-box-list {
+		margin-top: 12px;
+	}
+	.skills-section {
+  		margin-bottom: 0 !important;
+	}
+	.news-menu {
+		left: 0 !important;
+		margin-left: 0 !important;
+	}
+	.news-menu li {
+		width: 181px !important;
+	}
+	.product-box, .news-box {
+		width: 345px !important;
+	}
+	.portfolio-items li {
+		float: none !important;
+		margin: 0 auto 20px !important;
+		overflow: hidden;
+		width: 90% !important;
+	}
+}
+
+
+/*============================================================
+		iPhone 6 Plus (Portrait) 414px
+==============================================================*/
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+
+	div.service-box {
+		float: none;
+		margin: 0 auto 35px;
+		width: 90%;
+	}
+	div.price-box {
+		float: none;
+		margin: 0 auto 30px;
+		overflow: hidden;
+		width: 90%;
+	}
+	ul.news-menu li {
+		width: 199px;
+	}
+	div.product-box, article.news-box {
+		width: 378px;
+	}
+	ul.portfolio-items li {
+		float: none;
+		margin: 0 auto 20px;
+		overflow: hidden;
+		width: 90%;
+	}
+	div.testimonial-box time {
+		margin-right: 15px;
+	}
+	span.testimonial-box_date {
+		font-size: 5em;
+	}
+
+}
+
+/*============================================================
+	iPhone 6 landscape width: 667px
+==============================================================*/
+
+@media only screen and (min-width: 569px) and (max-width: 667px) {
+
+	#main-title {
+		margin-top: 75px !important;
+	}
+	#main-header div.hgroup h1 {
+		display: none;
+	}
+	#main-header div.social-icons {
+		margin-top: 20px;
+	}
+	#main-header div.big-dual-button {
+		bottom: 40px;
+	}
+	div.price-box {
+		width: 47%;
+	}
+}
+
+
+/*============================================================
+		iPhone 6 Plus landscape Â· width: 736px
+==============================================================*/
+
+@media only screen and (min-width: 668px) and (max-width: 736px) {
+	
+	#main-title {
+		margin-top: 108px !important;
+	}
+	
+	#main-header div.hgroup h1 {
+		display: none;
+	}
+	div#mobile-navi {
+		display: none;
+	}
+	section#wp-navigation {
+		background-color: transparent;
+		display: block;
+		height: auto;
+	}
+	section#wp-navigation ul li {
+		float: left;
+	}
+	section#wp-navigation ul li a {
+		border-bottom: 0;
+	}
+	nav#main-nav li {
+		padding: 30px 6px;
+	}
+	a.light_logo {
+		margin: 25px 0 0;
+	}
+
+}
