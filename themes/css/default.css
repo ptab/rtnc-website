@@ -2802,7 +2802,9 @@ a.meanmenu-reveal {
 
   .grid-col-4 {
     width: 97.499999996%;
-    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
   }
   
   .testimonial-box time {
