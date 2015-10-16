@@ -66,7 +66,7 @@ img.aligncenter {
 }
 /*Modify style for navbar*/
 .light_logo{
-	margin: -15px 0 0px 0px;
+	margin: -30px 0 0px 0px;
 	max-height: 30px;
 	max-width: 30px;
 	overflow: hidden;
@@ -74,7 +74,7 @@ img.aligncenter {
 }
 .light_logo img{
 	display: inline;
-	margin: -15px 0 0px 0px;
+	margin: -30px 0 0px 0px;
 	max-height: 100%;
 	max-width: 100%;
 	padding: 0;
