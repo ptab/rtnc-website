@@ -505,7 +505,7 @@ p.grid-col-6{
 
 #main-nav li {
   display: inline-block;
-  padding: 23px 1em;
+  padding: 23px 5px;
 }
 
 #main-nav a {
