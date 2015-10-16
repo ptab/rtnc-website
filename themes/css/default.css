@@ -2783,6 +2783,7 @@ a.meanmenu-reveal {
 
   .news-box {
     width: 19.5em;
+	display: list-item;
   }
 
   .twitter-container {
@@ -2861,6 +2862,7 @@ a.meanmenu-reveal {
 
   .news-box {
     width: 23.125em;
+	display: list-item;
   }
 
   .twitter-container {
@@ -2879,6 +2881,7 @@ a.meanmenu-reveal {
 
   .news-box {
     width: 22.125em;
+	display: list-item;
   }
 
   .twitter-container {
@@ -2941,6 +2944,7 @@ a.meanmenu-reveal {
   .product-box,
   .news-box {
     width: 17em;
+	display: list-item;
   }
 
   .twitter-container {
@@ -2950,6 +2954,7 @@ a.meanmenu-reveal {
 @media only screen and (max-width: 33.3125em) {
   .product-box, .news-box {
     width: 14.875em;
+	display: list-item;
   }
 
   .twitter-container {
@@ -3034,6 +3039,7 @@ a.meanmenu-reveal {
 
   .product-box, .news-box {
     width: 20.625em;
+	display: list-item;
   }
 
   #main-title {
@@ -3074,6 +3080,7 @@ a.meanmenu-reveal {
 
   .product-box, .news-box {
     width: 17.0625em;
+	display: list-item;
   }
 
   #main-header .hgroup {

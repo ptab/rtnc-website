@@ -167,6 +167,7 @@ img.aligncenter {
 	}
 	.product-box, .news-box {
 		width: 21.5625em !important;
+		display: list-item !important;
 	}
 	.portfolio-items li {
 		float: none !important;
@@ -199,6 +200,7 @@ img.aligncenter {
 	}
 	div.product-box, article.news-box {
 		width: 23.625em;
+		display: list-item;
 	}
 	ul.portfolio-items li {
 		float: none;
