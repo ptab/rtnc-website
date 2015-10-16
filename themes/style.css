@@ -67,10 +67,10 @@ img.aligncenter {
 /*Modify style for navbar*/
 .light_logo{
 	margin: 0;
-	max-height: 40px;
-	max-width: 40px;
+	max-height: 30px;
+	max-width: 30px;
 	overflow: hidden;
-	padding: 10px 0;
+	padding: 0;
 }
 .light_logo img{
 	display: inline;
@@ -92,7 +92,7 @@ img.aligncenter {
 	  margin: -32px 0 5px 15px;
 	  height: 35px;
 	  padding: 5px;
-	  width: 100px;
+	  width: 50px;
 	}
 }
 

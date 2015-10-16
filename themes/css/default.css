@@ -3349,9 +3349,8 @@ a.meanmenu-reveal {
 @media(max-width:767px){
   .light_logo {
     display: inline-block;
-    float: right;
     margin: -32px 0 5px 15px;
     padding: 5px;
-    width: 100px;
+    width: 50px;
   }
 }
