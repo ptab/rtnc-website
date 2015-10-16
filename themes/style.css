@@ -66,15 +66,15 @@ img.aligncenter {
 }
 /*Modify style for navbar*/
 .light_logo{
-	float: left;
+	float: right;
 	margin: 0;
-	max-height: 56px;
-	max-width: 300px;
+	max-height: 40px;
+	max-width: 40px;
 	overflow: hidden;
-	padding: 6px 0;
+	padding: 10px 0;
 }
 .light_logo img{
-	display: inline-block;
+	display: inline;
 	margin: 0;
 	max-height: 100%;
 	max-width: 100%;
@@ -89,12 +89,12 @@ img.aligncenter {
 		margin-top: 5px;
 	}
   .light_logo {
-	  display: block;
-	  float: left;
+	  display: inline-block;
+	  float: right;
 	  margin: -32px 0 5px 15px;
 	  height: 35px;
 	  padding: 5px;
-	  width: 200px;
+	  width: 100px;
 	}
 }
 

@@ -3331,8 +3331,8 @@ a.meanmenu-reveal {
 
 /*Modify style for navbar*/
 .light_logo{
-  display: block;
-  float: left;
+  display: inline-block;
+  float: right;
   margin: 0;
   padding: 20px 0;
 }
@@ -3349,10 +3349,10 @@ a.meanmenu-reveal {
 
 @media(max-width:767px){
   .light_logo {
-    display: block;
-    float: left;
+    display: inline-block;
+    float: right;
     margin: -32px 0 5px 15px;
     padding: 5px;
-    width: 200px;
+    width: 100px;
   }
 }
