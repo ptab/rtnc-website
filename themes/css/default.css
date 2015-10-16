@@ -560,7 +560,8 @@ p.grid-col-6{
 }
 
 #main-header .social-icons {
-  margin-top: 25px;
+  bottom: 50px;
+  position: absolute;
 }
 
 #main-header .big-dual-button {
@@ -2980,10 +2981,14 @@ a.meanmenu-reveal {
     border: none;
   }
 
+  #main-header .social-icons {
+    bottom: 0;
+  }
+  
   #main-header .big-dual-button {
     bottom: 0;
   }
-
+  
   .big-dual-button:after {
     display: none;
   }

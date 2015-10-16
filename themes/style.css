@@ -230,7 +230,7 @@ img.aligncenter {
 		display: none;
 	}
 	#main-header div.social-icons {
-		margin-top: 20px;
+		bottom: 40px;
 	}
 	#main-header div.big-dual-button {
 		bottom: 40px;
