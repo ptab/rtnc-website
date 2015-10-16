@@ -85,7 +85,7 @@ img.aligncenter {
 }
 @media(max-width:767px){
 	.meanmenu-reveal {
-		margin-top: 0px;
+		margin-top: 2px;
 	}
   .light_logo {
 	  display: inline-block;
