@@ -2800,6 +2800,11 @@ a.meanmenu-reveal {
     text-align: center;
   }
 
+  .grid-col-4 {
+    width: 97.499999996%;
+    text-align: center;
+  }
+  
   .testimonial-box time {
     width: 22.499999999%;
   }
