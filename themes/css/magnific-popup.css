@@ -363,6 +363,7 @@ img.mfp-img {
     margin: 0 auto;
     max-width: 600px;
     position: relative;
+    margin-top: 25px;
 }
 #portfolio_box .entry {
     padding: 0 20px 20px;
