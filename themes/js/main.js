@@ -621,7 +621,7 @@ jQuery(document).ready(function($) {'use strict';
 
 	
 	$('.single-work-view').magnificPopup({
-		type: 'ajax'
+		type: 'inline'
 	});
 	
 	$('.bxslider').bxSlider({
