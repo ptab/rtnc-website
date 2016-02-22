@@ -362,7 +362,7 @@ img.mfp-img {
     color: #000000 !important;
     margin: 0 auto;
     max-width: 600px;
-    position: relative;
+    position: absolute;
     margin-top: 25px;
 }
 #portfolio_box .entry {
