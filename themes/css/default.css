@@ -1313,7 +1313,7 @@ textarea.error {
   background-color: black;
   height: 100%;
   opacity: 0;
-  position: relative;
+  position: absolute;
   text-align: center;
   top: 0;
   width: 100%;
@@ -1323,7 +1323,7 @@ textarea.error {
   bottom: 10%;
   display: inline-block;
   opacity: 0;
-  position: relative;
+  position: absolute;
   text-decoration: none;
 }
 
