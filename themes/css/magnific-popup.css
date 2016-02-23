@@ -115,7 +115,7 @@ button::-moz-focus-inner {
     line-height: 44px;
     opacity: 0.65;
     padding: 0 0 18px 10px;
-    position: relative;
+    position: absolute;
     right: 0;
     text-align: center;
     text-decoration: none;
