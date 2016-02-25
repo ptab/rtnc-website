@@ -922,7 +922,7 @@ p.grid-col-6{
 }
 
 .price-box_price:before {
-  content: "$";
+  content: "";
   font-size: 0.5em;
   left: -0.5em;
   position: absolute;
