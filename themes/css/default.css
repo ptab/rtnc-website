@@ -2890,6 +2890,7 @@ a.meanmenu-reveal {
 
   .historia {
     max-width: 23.125em;
+	float: none;
 	margin-left: auto;
 	margin-right: auto;
   }
