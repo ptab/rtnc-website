@@ -2905,8 +2905,8 @@ a.meanmenu-reveal {
     margin-left: auto;
     margin-right: auto;
     max-width: 70%;
-    padding-bottom: 0.4em;
-    padding-top: 0.35em;
+    padding-bottom: 8px;
+    padding-top: 7px;
 }
   
   .section-separator blockquote {
