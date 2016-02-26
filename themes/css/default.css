@@ -402,6 +402,7 @@ p.grid-col-6{
 .testimonials-section h3,
 .image-hover_info h3,
 .news-box h3,
+.historia h3,
 .team-box h3,
 .contact-info-box h3{
 	color: #FF7519;
@@ -436,6 +437,7 @@ p.grid-col-6{
 
 .product-box h4,
 .news-box h4,
+.historia h4,
 .team-box h4{
 	font-family: 'Lato',sans-serif;
 	color: #808080;
@@ -448,6 +450,7 @@ p.grid-col-6{
 }
 
 .product-box p,
+.historia p,
 .news-box p{
 	margin-top: 25px;
 	margin-bottom: 0;
@@ -943,6 +946,7 @@ p.grid-col-6{
 }
 
 .product-box h3,
+.historia h3,
 .news-box h3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 0px;
@@ -950,6 +954,7 @@ p.grid-col-6{
 }
 
 .product-box h4,
+.historia h4,
 .news-box h4 {
   margin-bottom: 12px;
   margin-top: 0;
@@ -1092,6 +1097,7 @@ p.grid-col-6{
 
 .portfolio-items img,
 .product-box img,
+.historia img,
 .news-box img {
   height: auto;
   width: 100%;
@@ -1131,7 +1137,8 @@ p.grid-col-6{
   /* Change this if you change the menu text */
 }
 
-.news-box {
+.news-box,
+.historia {
   margin-bottom: 25px;
   margin-top: 25px;
 }
