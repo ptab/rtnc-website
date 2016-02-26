@@ -2900,6 +2900,13 @@ a.meanmenu-reveal {
     text-align: center;
   }
   
+  .section-separator blockquote {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 3em;
+    margin: 1em 0;
+  }
+  
   .twitter-container {
     max-width: 762px;
   }
