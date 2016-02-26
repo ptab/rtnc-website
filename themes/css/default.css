@@ -2884,12 +2884,13 @@ a.meanmenu-reveal {
     width: 227px;
   }
 
+  .grid-col-4,
   .news-box {
     width: 97.499999996%;
   }
 
   .historia {
-    max-width: 370px;
+    max-width: 23.125em;
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
