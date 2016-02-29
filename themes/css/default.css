@@ -2900,6 +2900,10 @@ a.meanmenu-reveal {
     text-align: center;
   }
   
+  .section-separator {
+    padding: 100px 0;
+}
+    
   .section-separator figure {
     background-color:rgba(243, 243, 243, 0.65);
     margin-left: auto;
