@@ -105,7 +105,7 @@ img.aligncenter {
 @media only screen and (max-width: 1024px) {
 	.parralax_section{
 		background-attachment: scroll !important;
-		background-position: center center !important;
+		background-position: center top !important;
 		background-size: cover !important;
 		height: auto;
 		margin: 0 auto;
