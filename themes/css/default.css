@@ -2914,6 +2914,8 @@ a.meanmenu-reveal {
     font-weight: 300;
     line-height: 20px;
     margin: 20px 0;
+	padding-bottom: 5px;
+    padding-top: 4px;
   }
   
   .twitter-container {
