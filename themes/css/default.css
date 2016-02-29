@@ -3219,7 +3219,8 @@ a.meanmenu-reveal {
   .section-separator {
     background-attachment: scroll;
     background-position: center center;
-   background-size: cover;
+    background-size: cover;
+    padding: 100px 0;
   }
 }
 @media (max-width: 600px){
