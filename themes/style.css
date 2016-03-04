@@ -83,6 +83,12 @@ img.aligncenter {
 #main-nav ul{
   float: center;
 }
+
+#lingual-nav{}
+#lingual-nav ul{
+  float: center;
+}
+
 @media(max-width:767px){
 	.meanmenu-reveal {
 		margin-top: 2px;
@@ -267,6 +273,9 @@ img.aligncenter {
 		border-bottom: 0;
 	}
 	nav#main-nav li {
+		padding: 30px 5px;
+	}
+		nav#lingual-nav li {
 		padding: 30px 5px;
 	}
 	a.light_logo {

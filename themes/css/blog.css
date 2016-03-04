@@ -153,6 +153,10 @@ body{
   position: absolute;
 }
 
+#lingual-nav{
+  position: absolute;
+}
+
 /*
  *  ===========================
  *  =====  BLOG RULES =====

@@ -520,6 +520,46 @@ p.grid-col-6{
   transition: all 0.5s ease 0s;
 }
 
+
+
+
+#lingual-nav {
+  background: #3a3a3c;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  height: 70px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#lingual-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#lingual-nav li {
+  display: inline-block;
+  padding: 23px 1em;
+}
+
+#lingual-nav a {
+  color: white;
+  color: rgba(255, 255, 255, 0.75);
+  outline: 0 none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+
+
+
+
+
+
 #main-header {
   text-align: center;
 }
@@ -2642,6 +2682,7 @@ a.meanmenu-reveal {
  *
  */
 #main-nav a:hover,
+#lingual-nav a:hover,
 #main-header .a-icon:hover,
 .image-hover .icon:hover {
   color: white;
@@ -3385,6 +3426,11 @@ a.meanmenu-reveal {
 }
 #main-nav{}
 #main-nav ul{
+  float: center;
+}
+
+#lingual-nav{}
+#lingual-nav ul{
   float: center;
 }
 
