@@ -496,6 +496,7 @@ p.grid-col-6{
   height: 70px;
   position: fixed;
   text-align: center;
+  vertical-align: middle;
   top: 0;
   width: 100%;
   z-index: 999;
