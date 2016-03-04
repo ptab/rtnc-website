@@ -284,9 +284,9 @@ main{
   outline:none;
   cursor:pointer;
   text-decoration:none;
-  text-align:center;
+  text-align:right;
   line-height:36px;
-  vertical-align:right
+  vertical-align:middle
 }
 
 .mdl-button::-moz-focus-inner{
