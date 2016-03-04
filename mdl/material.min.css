@@ -608,7 +608,7 @@ input.mdl-button[type="submit"]{
 }
 
 .mdl-menu__container.is-visible .mdl-menu{
-  opacity:0.5;
+  opacity:1;
   z-index:999
 }
 
@@ -619,7 +619,7 @@ input.mdl-button[type="submit"]{
 
 .mdl-menu.mdl-menu--bottom-right{
   left:auto;
-  right:0
+  right:auto;
 }
 
 .mdl-menu.mdl-menu--top-left{
