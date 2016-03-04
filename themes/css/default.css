@@ -524,15 +524,15 @@ p.grid-col-6{
 
 
 #lingual-nav {
-  background: rgba(0, 0, 0, 0);
+  background: #3a3a3c;
   background: rgba(0, 0, 0, 0);
   border-bottom: 0px solid rgba(255, 255, 255, 0.0);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.0);
   height: 50px;
   position: fixed;
-  text-align: center;
+  text-align: left;
   vertical-align: 50%;
-  bottom: 25px;
+  top: 25px;
   width: 100%;
   z-index: 999;
 }
