@@ -530,7 +530,7 @@ p.grid-col-6{
   height: 70px;
   position: fixed;
   text-align: center;
-  bottom: 25px;
+  bottom: 0;
   width: 100%;
   z-index: 1006;
 }
