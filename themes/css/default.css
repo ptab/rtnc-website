@@ -531,8 +531,7 @@ p.grid-col-6{
   height: 50px;
   position: fixed;
   text-align: left;
-  vertical-align: 50%;
-  top: 25px;
+  top: 0;
   width: 100%;
   z-index: 999;
 }
