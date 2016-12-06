@@ -1,0 +1,18 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//QR-Code-Generator.com//EN
+N:Taborda;Paulo;;;
+FN:Paulo Taborda
+ORG:RTNC, Lda;
+TITLE:CEO
+EMAIL;TYPE=PREF,INTERNET:ptaborda@gmail.com
+TEL;TYPE=CELL,voice:935896072
+TEL;TYPE=WORK,voice:213913290
+TEL;TYPE=WORK,fax:
+ADR;TYPE=WORK;type=pref:;;R. Coelho da Rocha, nº 26 RC esquerdo;Lisboa;;1250-088;Portugal
+URL:
+
+NOTE:
+
+REV:2008-04-24T19:52:43Z
+END:VCARD
