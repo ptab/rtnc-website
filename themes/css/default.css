@@ -494,7 +494,6 @@ p.grid-col-6{
   border-bottom: 0px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   height: 70px;
-  position: fixed;
   text-align: center;
   vertical-align: middle;
   top: 0;
