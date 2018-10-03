@@ -36,6 +36,21 @@
 
 /*global $:false */
 
+/* ERRO DO SCROLL DO CHROME - CORRECÇÃO */
+
+$(document).ready(function () {
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && isChrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    });
+	
+/* ERRO DO SCROLL DO CHROME - FIM DA CORRECÇÃO */
+
 jQuery(window).load(function(){
    setTimeout(function(){ 
 	jQuery('.news-menu_news').trigger('click');
