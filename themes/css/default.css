@@ -797,7 +797,7 @@ p.grid-col-6{
   z-index: 1;
 }
 .section-separator {
-  background-image:url('http://rtnc.pt/img/backgrounds/bg_2.jpg');
+  background-image:url('/img/backgrounds/bg_2.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
