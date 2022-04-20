@@ -10,8 +10,8 @@ License: GNU General Public License
 License URI: license.txt
 Text Domain: Lightflow
 */
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import url(//fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Lato:400,300,100,700);
 @import url('css/normalize.css');
 .wp-caption{
 	max-width: 100%;
